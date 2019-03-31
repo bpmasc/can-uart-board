@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+LIBS:can_uart_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:MAX3051 U40
+U 1 1 5C9FBCE7
+P 5650 3600
+F 0 "U40" H 5450 4100 50  0000 C CNN
+F 1 "MAX3051" H 5350 4250 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-8" H 5650 3600 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf" H 5650 3600 50  0001 C CNN
+	1    5650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J40
+U 1 1 5C9FBDCA
+P 2800 3500
+F 0 "J40" H 2906 3778 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2906 3687 50  0000 C CNN
+F 2 "Connectors_JST:JST_GH_SM04B-GHS-TB_04x1.25mm_Angled" H 2800 3500 50  0001 C CNN
+F 3 "~" H 2800 3500 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 5500 0    50   BiDi ~ 0
+3V3
+Text HLabel 1950 5650 0    50   BiDi ~ 0
+VBUS
+Text HLabel 1950 5800 0    50   BiDi ~ 0
+GND
+$Comp
+L power:VBUS #PWR?
+U 1 1 5CA20AFA
+P 2400 5650
+AR Path="/5C9F44DB/5CA20AFA" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA20AFA" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 2400 5500 50  0001 C CNN
+F 1 "VBUS" H 2415 5823 50  0000 C CNN
+F 2 "" H 2400 5650 50  0001 C CNN
+F 3 "" H 2400 5650 50  0001 C CNN
+	1    2400 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA20B00
+P 2400 5800
+AR Path="/5C9F44DB/5CA20B00" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA20B00" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 2400 5550 50  0001 C CNN
+F 1 "GND" H 2405 5627 50  0000 C CNN
+F 2 "" H 2400 5800 50  0001 C CNN
+F 3 "" H 2400 5800 50  0001 C CNN
+	1    2400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CA20B06
+P 2200 5500
+AR Path="/5C9F44DB/5CA20B06" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA20B06" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 2200 5350 50  0001 C CNN
+F 1 "+3V3" H 2215 5673 50  0000 C CNN
+F 2 "" H 2200 5500 50  0001 C CNN
+F 3 "" H 2200 5500 50  0001 C CNN
+	1    2200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5500 2200 5500
+Wire Wire Line
+	1950 5650 2400 5650
+Wire Wire Line
+	2400 5800 1950 5800
+$Comp
+L Connector:Conn_01x04_Male J41
+U 1 1 5CA2EEF3
+P 2800 4500
+F 0 "J41" H 2906 4778 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2906 4687 50  0000 C CNN
+F 2 "Connectors_JST:JST_GH_SM04B-GHS-TB_04x1.25mm_Angled" H 2800 4500 50  0001 C CNN
+F 3 "~" H 2800 4500 50  0001 C CNN
+	1    2800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA2EF4C
+P 5650 4100
+AR Path="/5C9F44DB/5CA2EF4C" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA2EF4C" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 5650 3850 50  0001 C CNN
+F 1 "GND" H 5655 3927 50  0000 C CNN
+F 2 "" H 5650 4100 50  0001 C CNN
+F 3 "" H 5650 4100 50  0001 C CNN
+	1    5650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4000 5650 4100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CA2EF80
+P 5650 2900
+AR Path="/5C9F44DB/5CA2EF80" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA2EF80" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 5650 2750 50  0001 C CNN
+F 1 "+3V3" H 5665 3073 50  0000 C CNN
+F 2 "" H 5650 2900 50  0001 C CNN
+F 3 "" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2900 5650 2950
+$Comp
+L Device:R R40
+U 1 1 5CA2F01F
+P 6600 3600
+F 0 "R40" H 6670 3646 50  0000 L CNN
+F 1 "120" H 6670 3555 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6530 3600 50  0001 C CNN
+F 3 "~" H 6600 3600 50  0001 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3500 6350 3500
+Wire Wire Line
+	6400 3500 6400 3400
+Wire Wire Line
+	6400 3400 6600 3400
+Wire Wire Line
+	6600 3400 6600 3450
+Wire Wire Line
+	6150 3700 6400 3700
+Wire Wire Line
+	6400 3700 6400 3800
+Wire Wire Line
+	6400 3800 6550 3800
+Wire Wire Line
+	6600 3800 6600 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5CA2F211
+P 3400 4750
+AR Path="/5C9F44DB/5CA2F211" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA2F211" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 3400 4500 50  0001 C CNN
+F 1 "GND" H 3405 4577 50  0000 C CNN
+F 2 "" H 3400 4750 50  0001 C CNN
+F 3 "" H 3400 4750 50  0001 C CNN
+	1    3400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA2F240
+P 3400 3700
+AR Path="/5C9F44DB/5CA2F240" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA2F240" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 3400 3450 50  0001 C CNN
+F 1 "GND" H 3405 3527 50  0000 C CNN
+F 2 "" H 3400 3700 50  0001 C CNN
+F 3 "" H 3400 3700 50  0001 C CNN
+	1    3400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4700 3400 4700
+Wire Wire Line
+	3400 4700 3400 4750
+Wire Wire Line
+	3000 3700 3400 3700
+Wire Wire Line
+	3000 3400 3400 3400
+Wire Wire Line
+	3400 4400 3000 4400
+Text Label 7000 3400 0    50   ~ 0
+CAN_H
+Text Label 7000 3800 0    50   ~ 0
+CAN_L
+Text Label 3000 3600 0    50   ~ 0
+CAN_H
+Text Label 3000 4600 0    50   ~ 0
+CAN_H
+Text Label 3000 3500 0    50   ~ 0
+CAN_L
+Text Label 3000 4500 0    50   ~ 0
+CAN_L
+$Comp
+L Device:C C40
+U 1 1 5CA2FEE2
+P 6200 3100
+F 0 "C40" H 6315 3146 50  0000 L CNN
+F 1 "0.1u" H 6315 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6238 2950 50  0001 C CNN
+F 3 "~" H 6200 3100 50  0001 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3000E
+P 6200 3250
+AR Path="/5C9F44DB/5CA3000E" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA3000E" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 6200 3000 50  0001 C CNN
+F 1 "GND" H 6205 3077 50  0000 C CNN
+F 2 "" H 6200 3250 50  0001 C CNN
+F 3 "" H 6200 3250 50  0001 C CNN
+	1    6200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2950 5650 2950
+Connection ~ 5650 2950
+Wire Wire Line
+	5650 2950 5650 3200
+NoConn ~ 5150 3700
+$Comp
+L Device:R R41
+U 1 1 5CA303FA
+P 5000 3950
+F 0 "R41" H 5070 3996 50  0000 L CNN
+F 1 "R" H 5070 3905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 4930 3950 50  0001 C CNN
+F 3 "~" H 5000 3950 50  0001 C CNN
+	1    5000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA30440
+P 5000 4100
+AR Path="/5C9F44DB/5CA30440" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA30440" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 5000 3850 50  0001 C CNN
+F 1 "GND" H 5005 3927 50  0000 C CNN
+F 2 "" H 5000 4100 50  0001 C CNN
+F 3 "" H 5000 4100 50  0001 C CNN
+	1    5000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3800 5000 3800
+Text Label 5000 3800 2    50   ~ 0
+CAN_RS
+Text Label 4300 3400 2    50   ~ 0
+CAN_TX
+Text Label 4300 3500 2    50   ~ 0
+CAN_RX
+$Comp
+L power:VBUS #PWR?
+U 1 1 5CA3074A
+P 3400 4400
+AR Path="/5C9F44DB/5CA3074A" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA3074A" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 3400 4250 50  0001 C CNN
+F 1 "VBUS" H 3415 4573 50  0000 C CNN
+F 2 "" H 3400 4400 50  0001 C CNN
+F 3 "" H 3400 4400 50  0001 C CNN
+	1    3400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5CA307CD
+P 3400 3400
+AR Path="/5C9F44DB/5CA307CD" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA307CD" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0175" H 3400 3250 50  0001 C CNN
+F 1 "VBUS" H 3415 3573 50  0000 C CNN
+F 2 "" H 3400 3400 50  0001 C CNN
+F 3 "" H 3400 3400 50  0001 C CNN
+	1    3400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:NUP2105L D40
+U 1 1 5CA30B86
+P 6450 4200
+F 0 "D40" H 6655 4246 50  0000 L CNN
+F 1 "NUP2105L" H 6655 4155 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6675 4150 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 6575 4325 50  0001 C CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA30BE6
+P 6450 4400
+AR Path="/5C9F44DB/5CA30BE6" Ref="#PWR?"  Part="1" 
+AR Path="/5C9F44DE/5CA30BE6" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 6450 4150 50  0001 C CNN
+F 1 "GND" H 6455 4227 50  0000 C CNN
+F 2 "" H 6450 4400 50  0001 C CNN
+F 3 "" H 6450 4400 50  0001 C CNN
+	1    6450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4000 6550 3800
+Connection ~ 6550 3800
+Wire Wire Line
+	6550 3800 6600 3800
+Wire Wire Line
+	6350 4000 6350 3500
+Connection ~ 6350 3500
+Wire Wire Line
+	6350 3500 6400 3500
+Text Notes 7850 3700 0    50   ~ 0
+Note MAX3051:\n- R41 between25k - 200k\n- C40 close to MAX3051
+Text HLabel 1950 6350 0    50   Input ~ 0
+CAN_TX
+Text HLabel 1950 6500 0    50   Output ~ 0
+CAN_RX
+Text HLabel 1950 6650 0    50   Input ~ 0
+CAN_RS
+Text Label 1950 6650 0    50   ~ 0
+CAN_RS
+Text Label 1950 6500 0    50   ~ 0
+CAN_RX
+Text Label 1950 6350 0    50   ~ 0
+CAN_TX
+$Comp
+L Device:R R42
+U 1 1 5CA3192E
+P 4800 3400
+F 0 "R42" V 4700 3300 50  0000 C CNN
+F 1 "0" V 4700 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4730 3400 50  0001 C CNN
+F 3 "~" H 4800 3400 50  0001 C CNN
+	1    4800 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5CA31C6D
+P 4800 3500
+F 0 "R43" V 4900 3400 50  0000 C CNN
+F 1 "0" V 4900 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4730 3500 50  0001 C CNN
+F 3 "~" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3400 4650 3400
+Wire Wire Line
+	4650 3500 4300 3500
+Wire Wire Line
+	4950 3400 5150 3400
+Wire Wire Line
+	5150 3500 4950 3500
+$Comp
+L Device:R R44
+U 1 1 5CAFDA3D
+P 7000 3600
+F 0 "R44" H 7070 3646 50  0000 L CNN
+F 1 "120" H 7070 3555 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6930 3600 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3450 7000 3400
+Wire Wire Line
+	7000 3400 6600 3400
+Connection ~ 6600 3400
+Wire Wire Line
+	6600 3800 7000 3800
+Wire Wire Line
+	7000 3800 7000 3750
+Connection ~ 6600 3800
+$EndSCHEMATC
